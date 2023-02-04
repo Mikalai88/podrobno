@@ -15,6 +15,7 @@ export type MenuProps = {
 function Menu(props: MenuProps) {
 
 
+
     return (<div>
             <MenuTitle title={props.title} onChange={() => {props.onChange()}}/>
             {!props.collapsed && <MenuBody items={props.items} />}
